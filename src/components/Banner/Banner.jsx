@@ -21,26 +21,26 @@ const Banner = () => {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-6 mt-10">
-            <div className="card bg-white text-black w-65 h-34.25">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 mt-10">
+            <div className="card bg-white text-black w-64.8 h-34.25">
               <div className="card-body items-center text-center">
                 <h2 className="card-title">10</h2>
                 <p>Total Friends</p>
               </div>
             </div>
-            <div className="card bg-white text-black w-65 h-34.25">
+            <div className="card bg-white text-black w-64.8 h-34.25">
               <div className="card-body items-center text-center">
                 <h2 className="card-title">3</h2>
                 <p>On Track</p>
               </div>
             </div>
-            <div className="card bg-white text-black w-65 h-34.25">
+            <div className="card bg-white text-black w-64.8 h-34.25">
               <div className="card-body items-center text-center">
                 <h2 className="card-title">6</h2>
                 <p>Need Attention</p>
               </div>
             </div>
-            <div className="card bg-white text-black w-65 h-34.25">
+            <div className="card bg-white text-black w-64.8 h-34.25">
               <div className="card-body items-center text-center">
                 <h2 className="card-title">12</h2>
                 <p>Interactions This Month</p>
