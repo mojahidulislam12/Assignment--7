@@ -16,9 +16,13 @@ const Timeline = () => {
         />
       </div>
       <div className="mt-6 pb-6 ">
-        {call.map((info) => (
-          <TimelineCard info={info}></TimelineCard>
-        ))}
+        {call.length === 0 ? (
+          <h1 className="w-277.5 mx-auto font-bold text-3xl">
+            No Selected Friend{" "}
+          </h1>
+        ) : (
+          call.map((info) => <TimelineCard info={info}></TimelineCard>)
+        )}
       </div>
     </div>
   );

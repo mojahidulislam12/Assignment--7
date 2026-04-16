@@ -21,7 +21,7 @@ const FriendDetails = () => {
 
   return (
     <div className="bg-[#F8FAFC]">
-      <div className=" md:flex max-w-277.5  mx-auto gap-6 pt-20">
+      <div className=" md:flex max-w-277.5 h-250 md:h-162  mx-auto gap-6 pt-10 md:pt-20">
         <div className="w-87.5 h-122 ">
           <div>
             <div className="card bg-base-100 w-64.8 h-66.5 shadow-sm ">
