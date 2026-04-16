@@ -6,22 +6,25 @@ import {
   Trash2,
   Video,
 } from "lucide-react";
+import { useContext } from "react";
 import { useLoaderData, useParams } from "react-router";
+import { FriendContext } from "../../context/FriendProvider";
 const FriendDetails = () => {
-  const { id } = useParams();
+  const { friendId } = useParams();
   const friends = useLoaderData();
-  const expectedFriend = friends.find((friend) => friend.id == id);
+  const expectedFriend = friends.find((friend) => friend.id == friendId);
   const { picture, name, tags, status, bio, email } = expectedFriend;
   console.log(expectedFriend);
+
+  const { handleCall } = useContext(FriendContext);
+  //console.log(call);
+
   return (
     <div className="bg-[#F8FAFC]">
-      <div className="flex max-w-277.5 mx-auto gap-6 pt-20">
+      <div className=" md:flex max-w-277.5  mx-auto gap-6 pt-20">
         <div className="w-87.5 h-122 ">
           <div>
-            <div
-              to={`/friendDetails/${id}`}
-              className="card bg-base-100 w-64.8 h-66.5 shadow-sm "
-            >
+            <div className="card bg-base-100 w-64.8 h-66.5 shadow-sm ">
               <figure className="px-10 pt-3">
                 <img
                   src={picture}
@@ -119,18 +122,27 @@ const FriendDetails = () => {
               Quick Check-In
             </h1>
             <div className="grid grid-cols-3 pb-6">
-              <div className="w-54 h-23.75 bg-[#F8FAFC] mt-4 rounded-md">
+              <button
+                onClick={() => handleCall(expectedFriend)}
+                className="w-54 h-23.75 bg-[#F8FAFC] mt-4 rounded-md"
+              >
                 <PhoneCall className="mx-auto mt-4 w-8 h-8" />
                 <p className="mt-2 text-center font-normal text[18px]">Call</p>
-              </div>
-              <div className="w-54 h-23.75 bg-[#F8FAFC] mt-4 rounded-md">
+              </button>
+              <button
+                onClick={() => handleCall(expectedFriend)}
+                className="w-54 h-23.75 bg-[#F8FAFC] mt-4 rounded-md"
+              >
                 <MessageSquareMore className="mx-auto mt-4 w-8 h-8" />
                 <p className="mt-2 text-center font-normal text[18px]">Text</p>
-              </div>
-              <div className="w-54 h-23.75 bg-[#F8FAFC] mt-4 rounded-md">
+              </button>
+              <button
+                onClick={() => handleCall(expectedFriend)}
+                className="w-54 h-23.75 bg-[#F8FAFC] mt-4 rounded-md"
+              >
                 <Video className="mx-auto mt-4 w-8 h-8" />
                 <p className="mt-2 text-center font-normal text[18px]">Video</p>
-              </div>
+              </button>
             </div>
           </div>
         </div>
