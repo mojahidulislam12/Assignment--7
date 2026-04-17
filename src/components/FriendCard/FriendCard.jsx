@@ -7,7 +7,7 @@ const FriendCard = ({ friend }) => {
     <div>
       <Link
         to={`/friendDetails/${id}`}
-        className="card bg-base-100 w-64.8 h-63.5 shadow-sm"
+        className="card bg-base-100 w-64.8 md:w-64 h-63.5 shadow-sm"
       >
         <figure className="px-10 pt-6">
           <img
