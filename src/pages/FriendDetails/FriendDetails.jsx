@@ -119,20 +119,39 @@ const FriendDetails = () => {
             <h1 className="text-[20px] text-[#244D3F]">Quick Check-In</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-              {[
-                { icon: <PhoneCall />, label: "Call" },
-                { icon: <MessageSquareMore />, label: "Text" },
-                { icon: <Video />, label: "Video" },
-              ].map((item, i) => (
-                <button
-                  key={i}
-                  onClick={() => handleCall(expectedFriend)}
-                  className="bg-[#F8FAFC] p-6 rounded-md flex flex-col items-center"
-                >
-                  <div className="w-8 h-8">{item.icon}</div>
-                  <p className="mt-2 text-[18px]">{item.label}</p>
-                </button>
-              ))}
+              <button
+                onClick={() => {
+                  handleCall(expectedFriend);
+                }}
+                className="bg-[#F8FAFC] p-6 rounded-md flex flex-col items-center"
+              >
+                <div className="w-8 h-8">
+                  <PhoneCall></PhoneCall>
+                </div>
+                <p className="mt-2 text-[18px]">Call</p>
+              </button>
+              <button
+                onClick={() => {
+                  handleCall(expectedFriend);
+                }}
+                className="bg-[#F8FAFC] p-6 rounded-md flex flex-col items-center"
+              >
+                <div className="w-8 h-8">
+                  <MessageSquareMore></MessageSquareMore>
+                </div>
+                <p className="mt-2 text-[18px]">Text</p>
+              </button>
+              <button
+                onClick={() => {
+                  handleCall(expectedFriend);
+                }}
+                className="bg-[#F8FAFC] p-6 rounded-md flex flex-col items-center"
+              >
+                <div className="w-8 h-8">
+                  <Video></Video>
+                </div>
+                <p className="mt-2 text-[18px]">Video</p>
+              </button>
             </div>
           </div>
         </div>

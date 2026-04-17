@@ -11,6 +11,7 @@ import { FriendContext } from "../../context/FriendProvider";
 
 const Stats = () => {
   const { call } = useContext(FriendContext);
+
   console.log(call);
   const data = [
     { name: "Text", value: call.length, fill: "#0088FE" },

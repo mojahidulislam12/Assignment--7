@@ -4,7 +4,7 @@ import { FriendContext } from "../../context/FriendProvider";
 
 const Timeline = () => {
   const { call } = useContext(FriendContext);
-  console.log(call);
+
   return (
     <div className="bg-[#F8FAFC]">
       <div className="w-90  sm:w-140 md:w-277.5 mx-auto pt-10 md:pt-20 ">
