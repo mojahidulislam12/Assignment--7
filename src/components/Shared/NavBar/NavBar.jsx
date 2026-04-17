@@ -48,8 +48,8 @@ const NavBar = () => {
         <div className="navbar-start">
           <h1 className="font-bold text-xl md:ml-20">KeenKeeper</h1>
         </div>
-        <div className="navbar-end  md:mr-20">
-          <div className="hidden lg:flex -mr-1 md:mr-0">
+        <div className="navbar-end mr-10  md:mr-20">
+          <div className="hidden lg:flex  md:mr-0 ">
             <ul className="menu menu-horizontal px-1">{links}</ul>
           </div>
           <div className="dropdown">
