@@ -8,7 +8,7 @@ const TimelineCard = ({ info }) => {
     year: "numeric",
   });
   return (
-    <div className="w-100 md:w-277.5 mx-auto">
+    <div className="w-90 sm:w-140 md:w-277 mx-auto">
       <div className=" h-20.75 bg-white mt-4 rounded-md flex p-4">
         <div>
           <img className="w-10 h-10 mr-4 rounded-md" src={picture} alt="" />

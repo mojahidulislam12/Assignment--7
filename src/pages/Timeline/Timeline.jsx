@@ -7,7 +7,7 @@ const Timeline = () => {
   console.log(call);
   return (
     <div className="bg-[#F8FAFC]">
-      <div className="w-277.5 mx-auto pt-10 md:pt-20 ">
+      <div className="w-90  sm:w-140 md:w-277.5 mx-auto pt-10 md:pt-20 ">
         <h1 className="font-bold text-[48px] ml-10 md:ml-0">Timeline</h1>
         <input
           type="text"
@@ -17,7 +17,7 @@ const Timeline = () => {
       </div>
       <div className="mt-6 pb-6 ">
         {call.length === 0 ? (
-          <h1 className="w-277.5 mx-auto font-bold text-3xl">
+          <h1 className="w-100 md:w-277.5 mx-auto font-bold text-3xl">
             No Selected Friend{" "}
           </h1>
         ) : (
