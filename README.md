@@ -1,16 +1,29 @@
-# React + Vite
+1.Projrct Name-
+> KeenKeeper — Keep Your Friendships Alive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. Description
+> KeenKeeper is a responsive React-based web application designed to help users maintain meaningful relationships with their friends. It allows users to track interactions, monitor communication goals, and stay connected through an intuitive interface with real-time feedback and analytics.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+3. Technologies Used
+ - React.js
+-  React Router DOM
+-  Tailwind CSS
+-  React Toastify
+-  Recharts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+4. Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ 1.  Smart Interaction Tracking
+Users can quickly log interactions like Call, Text, or Video with a single click. Each action automatically creates a timeline entry with the current date and shows a toast notification.
+
+2.  Dynamic Timeline System
+All interactions are stored and displayed in a clean timeline view. Users can also filter interactions by type (Call, Text, Video) for better tracking.
+
+3.  Friendship Analytics Dashboard
+A dedicated Stats page visualizes user interactions using a Pie Chart (Recharts), helping users understand their communication habits.
+
+---
