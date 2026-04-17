@@ -7,11 +7,11 @@ const Timeline = () => {
   console.log(call);
   return (
     <div className="bg-[#F8FAFC]">
-      <div className="w-277.5 mx-auto pt-20 ">
-        <h1 className="font-bold text-[48px]">Timeline</h1>
+      <div className="w-277.5 mx-auto pt-10 md:pt-20 ">
+        <h1 className="font-bold text-[48px] ml-10 md:ml-0">Timeline</h1>
         <input
           type="text"
-          className=" mt-6 bg-white w-87 h-13.5 border-1 rounded-md"
+          className=" mt-6 bg-white w-87 h-13.5 border-1 rounded-md ml-10 md:ml-0"
           placeholder="Filter timeline"
         />
       </div>
